@@ -7,6 +7,10 @@
 
 import UIKit
 
+struct ViewModel {
+    let title: String
+}
+
 protocol PresenterDelegate: AnyObject {
     func render(viewModel: ViewModel)
 }

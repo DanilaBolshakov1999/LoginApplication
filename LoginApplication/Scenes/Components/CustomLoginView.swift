@@ -8,7 +8,7 @@
 import UIKit
 
 protocol ViewProtocol: UIView {
-    var loginButton: UIButton { get }
+    func tappedButton()
 }
 
 final class CustomLoginView: UIView {
@@ -78,4 +78,6 @@ extension CustomLoginView {
     }
 }
 
-extension CustomLoginView: ViewProtocol { }
+extension CustomLoginView: ViewProtocol {
+    func tappedButton() { }
+}

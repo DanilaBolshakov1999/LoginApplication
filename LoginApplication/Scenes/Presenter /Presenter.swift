@@ -8,12 +8,16 @@
 import UIKit
 
 protocol PresenterProtocol: AnyObject {
-    func viewDidLoad(view: UIViewController)
+    func viewDidLoad()
+    func didTapLogin()
 }
 
 final class LoginPresenter: PresenterProtocol {
-    
+
     weak var delegate: PresenterDelegate?
     
-    func viewDidLoad(view: UIViewController) { }
+    func viewDidLoad() { }
+    func didTapLogin() {
+        <#code#>
+    }
 }
