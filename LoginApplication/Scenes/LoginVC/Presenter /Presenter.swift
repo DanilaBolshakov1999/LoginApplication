@@ -7,6 +7,7 @@
 
 import UIKit
 
+//MARK: - PresenterProtocol
 protocol PresenterProtocol: AnyObject {
     func viewDidLoad()
     func didTapLogin()
@@ -14,10 +15,10 @@ protocol PresenterProtocol: AnyObject {
 
 final class LoginPresenter: PresenterProtocol {
 
-    weak var delegate: PresenterDelegate?
+    weak var delegate: PresenterProtocol?
     
     func viewDidLoad() { }
     func didTapLogin() {
-        <#code#>
+        delegate?.didTapLogin()
     }
 }

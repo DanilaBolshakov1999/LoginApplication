@@ -17,6 +17,8 @@ protocol PresenterDelegate: AnyObject {
 
 final class LoginViewController: UIViewController {
     
+    let presenter = LoginPresenter()
+    
     //MARK: - UI
     private lazy var customLoginView = CustomLoginView()
 
@@ -25,12 +27,17 @@ final class LoginViewController: UIViewController {
         super.viewDidLoad()
         setupViews()
         setupConstraints()
+        presenter.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         view.backgroundColor = .systemBlue
     }
+    
+        @objc func buttonTapped() {
+            presenter.didTapLogin()
+        }
 }
 
 extension LoginViewController {
@@ -50,4 +57,11 @@ extension LoginViewController {
 
 extension LoginViewController: PresenterDelegate {
     func render(viewModel: ViewModel) { }
+}
+
+extension LoginViewController: PresenterProtocol {
+    func didTapLogin() {
+            let newViewController = OnboardingViewController()
+            navigationController?.pushViewController(newViewController, animated: true)
+    }
 }

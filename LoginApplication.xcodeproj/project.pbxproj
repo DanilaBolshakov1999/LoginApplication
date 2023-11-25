@@ -11,6 +11,8 @@
 		447D90F42B0E2F3D00A717EF /* Extension + UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447D90F32B0E2F3D00A717EF /* Extension + UIView.swift */; };
 		447D90F62B0E39BD00A717EF /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447D90F52B0E39BD00A717EF /* ViewModel.swift */; };
 		447D90F82B0E3A0100A717EF /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447D90F72B0E3A0100A717EF /* Presenter.swift */; };
+		447D91002B0F392C00A717EF /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447D90FF2B0F392C00A717EF /* OnboardingViewController.swift */; };
+		447D91022B0F3BA200A717EF /* CustomInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447D91012B0F3BA200A717EF /* CustomInputView.swift */; };
 		44F1BFCC2B0E1897002C8758 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F1BFCB2B0E1897002C8758 /* AppDelegate.swift */; };
 		44F1BFCE2B0E1897002C8758 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F1BFCD2B0E1897002C8758 /* SceneDelegate.swift */; };
 		44F1BFD02B0E1897002C8758 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F1BFCF2B0E1897002C8758 /* LoginViewController.swift */; };
@@ -23,6 +25,8 @@
 		447D90F32B0E2F3D00A717EF /* Extension + UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIView.swift"; sourceTree = "<group>"; };
 		447D90F52B0E39BD00A717EF /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		447D90F72B0E3A0100A717EF /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		447D90FF2B0F392C00A717EF /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		447D91012B0F3BA200A717EF /* CustomInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputView.swift; sourceTree = "<group>"; };
 		44F1BFC82B0E1897002C8758 /* LoginApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F1BFCB2B0E1897002C8758 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44F1BFCD2B0E1897002C8758 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,10 +50,8 @@
 		447D90EB2B0E23C300A717EF /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				447D90EE2B0E240300A717EF /* Model */,
-				447D90ED2B0E240000A717EF /* LoginViewController */,
-				447D90EC2B0E23FA00A717EF /* Presenter  */,
-				447D90EF2B0E2BCB00A717EF /* Components */,
+				447D90F92B0F34AC00A717EF /* LoginVC */,
+				447D90FA2B0F35C200A717EF /* OnboardingVC */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -92,6 +94,58 @@
 				447D90F32B0E2F3D00A717EF /* Extension + UIView.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		447D90F92B0F34AC00A717EF /* LoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				447D90EE2B0E240300A717EF /* Model */,
+				447D90ED2B0E240000A717EF /* LoginViewController */,
+				447D90EC2B0E23FA00A717EF /* Presenter  */,
+				447D90EF2B0E2BCB00A717EF /* Components */,
+			);
+			path = LoginVC;
+			sourceTree = "<group>";
+		};
+		447D90FA2B0F35C200A717EF /* OnboardingVC */ = {
+			isa = PBXGroup;
+			children = (
+				447D90FE2B0F361D00A717EF /* Model */,
+				447D90FD2B0F361A00A717EF /* OnboardingViewController */,
+				447D90FC2B0F361600A717EF /* Presenter  */,
+				447D90FB2B0F360500A717EF /* CustomInputView */,
+			);
+			path = OnboardingVC;
+			sourceTree = "<group>";
+		};
+		447D90FB2B0F360500A717EF /* CustomInputView */ = {
+			isa = PBXGroup;
+			children = (
+				447D91012B0F3BA200A717EF /* CustomInputView.swift */,
+			);
+			path = CustomInputView;
+			sourceTree = "<group>";
+		};
+		447D90FC2B0F361600A717EF /* Presenter  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Presenter ";
+			sourceTree = "<group>";
+		};
+		447D90FD2B0F361A00A717EF /* OnboardingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				447D90FF2B0F392C00A717EF /* OnboardingViewController.swift */,
+			);
+			path = OnboardingViewController;
+			sourceTree = "<group>";
+		};
+		447D90FE2B0F361D00A717EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		44F1BFBF2B0E1897002C8758 = {
@@ -222,6 +276,8 @@
 				447D90F82B0E3A0100A717EF /* Presenter.swift in Sources */,
 				44F1BFD02B0E1897002C8758 /* LoginViewController.swift in Sources */,
 				44F1BFCC2B0E1897002C8758 /* AppDelegate.swift in Sources */,
+				447D91002B0F392C00A717EF /* OnboardingViewController.swift in Sources */,
+				447D91022B0F3BA200A717EF /* CustomInputView.swift in Sources */,
 				44F1BFCE2B0E1897002C8758 /* SceneDelegate.swift in Sources */,
 				447D90F62B0E39BD00A717EF /* ViewModel.swift in Sources */,
 				447D90F12B0E2C0300A717EF /* CustomLoginView.swift in Sources */,
